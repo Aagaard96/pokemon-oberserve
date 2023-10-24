@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Brians Webpack Eksempel</title>
 	<link rel="stylesheet" href="./main.css">
+	<script src="index.js" defer></script>
 </head>
-<body>
-	<header>
-		<nav>
-			<button class="menuButton">Menu</button>
-			<ul class="primaryMenu">
-				<li><a href="#">Link1</a></li>
-				<li><a href="#">Link2</a></li>
-				<li><a href="#">Link3</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="container">
-		<h1>jgsnædfsædfl</h1>
-	</div>
 
-	<script src="./main.js" defer></script>
+<body>
+
+	<form class="nameForm">
+		<p>Hej <span class="name"></span></p>
+		<label>
+			Skriv dit navn <input type="text" name="nameInput">
+		</label>
+		<button type="submit">Gem</button>
+	</form>
+
+	<div class="hent"></div>
 </body>
+
 </html>
