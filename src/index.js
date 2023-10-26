@@ -1,5 +1,6 @@
 import "./style.scss"
 import "./scripts/observer"
 import "./scripts/localStorage"
-import"./scripts/hent"
+import "./scripts/artikel"
+import "./scripts/hent"
 import "./scripts/jsonconvert"
