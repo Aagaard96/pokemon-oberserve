@@ -1,4 +1,4 @@
-export default (function() {
+export default (function () {
     if (!window.location.pathname.includes("index.html")) return // guard clause
 
     const FORM = document.querySelector(".nameForm")
@@ -13,6 +13,6 @@ export default (function() {
 
         localStorage.setItem("name", event.target.nameInput.value)
         NAME.innerText = localStorage.getItem("name")
-    } 
+    }
 })()
 
