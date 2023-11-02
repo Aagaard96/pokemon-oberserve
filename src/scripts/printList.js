@@ -17,7 +17,6 @@ function printList() {
         CHECKBOX.type = "checkbox"
         CHECKBOX.name = index
         CHECKBOX.checked = item.done
-
         LI.append(CHECKBOX, item.name, DELETE_BUTTON)
         ITEMS.append(LI)
 
