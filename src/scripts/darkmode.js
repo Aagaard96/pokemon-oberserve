@@ -1,10 +1,10 @@
 export default (function () {
     if (!window.location.pathname.includes("darkmode.html")) return // guard clause
 
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches
+   /* if (window.matchMedia("(prefers-color-scheme: dark)").matches
         && localStorage.getItem("theme") !== "") {
         localStorage.setItem("theme", "darkmode")
-    }
+    }*/
 
     const CTA_BUTTON = document.querySelector(".switch__checkbox")
     CTA_BUTTON.addEventListener("click", clickHandler)

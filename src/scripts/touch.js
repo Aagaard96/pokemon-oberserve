@@ -25,8 +25,7 @@ export default (function () {
 					DIV.removeEventListener("touchend", touchHandler)
 				})
 				DIV.lastElementChild.addEventListener("animationend", function () {
-					// removeChild fjerner det sidste element i listen
-					DIV.removeChild(DIV.lastElementChild)
+					
 
 					DIV.addEventListener("touchstart", touchHandler)
 					DIV.addEventListener("touchend", touchHandler)
@@ -35,8 +34,8 @@ export default (function () {
 				DIV.lastElementChild.style.animation = `move${direction} 2s ease`;
 				direction = null
 			}
-			//const OUTPUT = document.querySelector(".output")
-			//OUTPUT.innerText = x < event.changedTouches[0].clientX ? "højre" : "venstre"
+			const OUTPUT = document.querySelector(".output")
+			OUTPUT.innerText = x < event.changedTouches[0].clientX ? "højre" : "venstre"
 			x = null
 		}
 	}
